@@ -1,0 +1,49 @@
+@import '../../../assets/styles/variables.scss';
+
+$margin: 15px;
+$extra-card-width: 2 * $margin;
+
+.cardContainer {
+    margin: $margin;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    text-align: center;
+    text-transform: uppercase;
+    transform: scale(1);
+    transition: all 0.15s ease;
+
+    min-width: calc(50% - #{$extra-card-width});
+    max-width: calc(50% - #{$extra-card-width});
+    @media (min-width: $three-cards-width) {
+        min-width: calc(33% - #{$extra-card-width});
+        max-width: 250px;
+    }
+
+    &:hover, &.selected {
+        transform: scale(1.05);
+        $box: 2px 2px 20px 6px #ccc;
+        -webkit-box-shadow: $box;
+        -moz-box-shadow:    $box;
+        box-shadow:         $box;
+        cursor: pointer;
+    }
+
+    .name {
+        padding: 15px 0 10px;
+    }
+
+    .price {
+        font-weight: bold;
+        padding-bottom: 20px;
+    }
+}
+
+.drawer_container {
+    padding: 20px;
+    max-width: 50vw;
+    text-align: right;
+    @media (max-width: 600px) {
+        max-width: 80vw;
+    }
+}

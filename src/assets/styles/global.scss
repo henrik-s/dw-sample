@@ -1,0 +1,13 @@
+@font-face {
+    font-family: "DWFutura";
+    src: url("../fonts/DWFuturaLatin.woff2");
+  }
+
+html {
+    background: #FFFAFA;
+    font-family: "DWFutura", sans-serif;
+    body {
+        padding: 0;
+        margin: 0;
+    }
+}

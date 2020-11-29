@@ -1,0 +1,19 @@
+@import '../assets/styles/variables.scss';
+
+.container {
+    padding-top: 50px;
+
+    .resultCount {
+        font-weight: 400;
+        text-align: center;
+        padding-bottom: 10px;
+    }
+
+    .grid {
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+        text-transform: uppercase;
+        max-width: $three-cards-width;
+    }
+}
